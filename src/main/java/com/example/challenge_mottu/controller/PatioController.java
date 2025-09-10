@@ -41,11 +41,12 @@ public class PatioController {
     }
 
     @DeleteMapping("/{identificacao}")
-    public ResponseEntity<Patio> deletar(@PathVariable String identificacao){
+    public ResponseEntity<Void> deletar(@PathVariable String identificacao) {
         System.out.println("Tentando deletar patio: " + identificacao);
         patioService.remover(identificacao);
-        return ResponseEntity.ok().build();
+        return ResponseEntity.noContent().build();
     }
+
 
 
 

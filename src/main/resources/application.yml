@@ -1,0 +1,31 @@
+---
+server:
+  port: 8080
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  datasource:
+    url: jdbc:postgresql://dpg-d2vc1vndiees73dv7nj0-a/cp4
+    password: WLvqDnkIXrwYY2cXMS4xyYVHlcGjclnO
+    username: admin
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+...
+
+
+
+
