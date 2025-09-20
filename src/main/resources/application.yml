@@ -38,7 +38,12 @@ spring:
     driver-class-name: oracle.jdbc.OracleDriver
 
   jpa:
-    database-platform: org.hibernate.dialect.OracleDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.OracleDialect
+        format_sql: true
 ...
 
 
