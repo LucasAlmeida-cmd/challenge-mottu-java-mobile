@@ -6,46 +6,20 @@ server:
     include-binding-errors: always
 
 
-
-#spring:
-#  datasource:
-#    url: jdbc:postgresql://dpg-d2vc1vndiees73dv7nj0-a/cp4
-#    password: WLvqDnkIXrwYY2cXMS4xyYVHlcGjclnO
-#    username: admin
-#  mvc:
-#    hiddenmethod:
-#      filter:
-#        enabled: true
-#
-#
-#  jpa:
-#    hibernate:
-#      ddl-auto: update
-#    properties:
-#      hibernate:
-#        dialect: org.hibernate.dialect.PostgreSQLDialect
-#        format_sql: true
-#    show-sql: true
-
-
 spring:
   datasource:
-    url: jdbc:oracle:thin:@oracle.fiap.com.br:1521:orcl
+    url: jdbc:sqlserver://servidor-sqldb-rm554848.database.windows.net:1433;database=sqldb-teste-banco;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
 #    username: ${DB_USER}
 #    password: ${DB_PASSWORD}
-    username: rm557569
-    password: 110602
-    driver-class-name: oracle.jdbc.OracleDriver
+    username: adm-sqldb-teste-banco
+    password: FIAP@2tdspy2025
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
 
   jpa:
     hibernate:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.OracleDialect
+        dialect: org.hibernate.dialect.SQLServerDialect
         format_sql: true
 ...
-
-
-
-
