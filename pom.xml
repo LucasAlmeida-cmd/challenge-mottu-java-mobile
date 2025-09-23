@@ -86,20 +86,17 @@
 
 
 		<dependency>
-			<groupId>com.microsoft.sqlserver</groupId>
-			<artifactId>mssql-jdbc</artifactId>
-			<version>13.2.0.jre11</version>
-			<scope>compile</scope>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 
 
 	</dependencies>
 
-	<packaging>war</packaging>
 	<build>
 		<plugins>
-			<!-- Gera um fat JAR executável para rodar no Azure -->
-			<plugin>
+			<!-- Gera um fat JAR executável para rodar no Azure -->			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>

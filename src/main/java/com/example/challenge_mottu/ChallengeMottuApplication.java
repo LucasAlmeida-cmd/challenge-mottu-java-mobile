@@ -6,15 +6,10 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class ChallengeMottuApplication extends SpringBootServletInitializer {
-
+public class ChallengeMottuApplication  {
 	public static void main(String[] args) {
 		SpringApplication.run(ChallengeMottuApplication.class, args);
 	}
 
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(ChallengeMottuApplication.class);
-	}
 
 }
