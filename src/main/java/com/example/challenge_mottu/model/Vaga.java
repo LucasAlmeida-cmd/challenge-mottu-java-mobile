@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
-@Table(name = "tb_vaga", uniqueConstraints = {@UniqueConstraint(columnNames = {"secao_id", "numeroVaga"})})
+@Table(name = "tb_vaga_mobile", uniqueConstraints = {@UniqueConstraint(columnNames = {"secao_id", "numeroVaga"})})
 @SequenceGenerator(name = "vaga", sequenceName = "SQ_USER_VAGA", allocationSize = 1)
 @Data
 public class Vaga {

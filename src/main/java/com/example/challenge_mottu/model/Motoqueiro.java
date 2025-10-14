@@ -7,7 +7,7 @@ import lombok.Data;
 import java.util.Calendar;
 
 @Entity
-@Table(name = "tb_user_motoqueiro")
+@Table(name = "tb_user_motoqueiro_mobile")
 @SequenceGenerator(name = "motoqueiro", sequenceName = "SQ_USER_MOTOQUEIRO", allocationSize = 1)
 @Data
 public class Motoqueiro extends User{

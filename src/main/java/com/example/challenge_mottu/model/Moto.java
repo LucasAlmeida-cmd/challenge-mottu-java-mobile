@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
-@Table(name = "tb_moto")
+@Table(name = "tb_moto_mobile")
 @SequenceGenerator(name = "moto", sequenceName = "SQ_USER_MOTO", allocationSize = 1)
 @Data
 public class Moto {

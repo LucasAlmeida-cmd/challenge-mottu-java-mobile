@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "tb_secao", uniqueConstraints = {@UniqueConstraint(columnNames = {"patio_id", "identificacao"})})
+@Table(name = "tb_secao_mobile", uniqueConstraints = {@UniqueConstraint(columnNames = {"patio_id", "identificacao"})})
 @SequenceGenerator(name = "secao", sequenceName = "SQ_USER_SECAO", allocationSize = 1)
 @Data
 public class Secao {
